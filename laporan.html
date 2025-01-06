@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Clustering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(120deg, #2980b9, #6dd5fa);
+            color: #fff;
+            animation: gradientBG 6s infinite alternate;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background: linear-gradient(120deg, #2980b9, #6dd5fa);
+            }
+
+            100% {
+                background: linear-gradient(120deg, #6dd5fa, #2980b9);
+            }
+        }
+
+        h1 {
+            color: #f1c40f;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        h2,
+        h3 {
+            color: #ecf0f1;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        p {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .cluster {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Laporan Hasil Clustering</h1>
+    <p>Data diproses dan dianalisis dengan metode TF-IDF dan algoritma KMeans untuk membuat 3, 4, dan 5 klaster.</p>
+    <h2>Analisis</h2>
+    <div>
+        <h3>Hasil Clustering (3 Klaster)</h3>
+        <p>
+            Cluster 0: omitted, mentoringums, mentoring<br>
+            Cluster 1: omitted, mentoringums, mentoring<br>
+            Cluster 2: omitted, mentoringums, mentoring
+        </p>
+        <h3>Hasil Clustering (4 Klaster)</h3>
+        <p>
+            Cluster 0: omitted, mentoringums, mentoring<br>
+            Cluster 1: omitted, mentoringums, mentoring<br>
+            Cluster 2: omitted, mentoringums, mentoring<br>
+            Cluster 3: omitted, mentoringums, mentoring
+        </p>
+        <h3>Hasil Clustering (5 Klaster)</h3>
+        <p>
+            Cluster 0: omitted, mentoringums, mentoring<br>
+            Cluster 1: omitted, mentoringums, mentoring<br>
+            Cluster 2: omitted, mentoringums, mentoring<br>
+            Cluster 3: omitted, mentoringums, mentoring<br>
+            Cluster 4: omitted, mentoringums, mentoring
+        </p>
+    </div>
+    <button id="toggleAnalysis">Tampilkan/Sembunyikan Analisis</button>
+
+    <script>
+        document.getElementById('toggleAnalysis').addEventListener('click', function () {
+            const analysis = document.querySelector('div');
+            if (analysis.style.display === 'none') {
+                analysis.style.display = 'block';
+                this.textContent = 'Sembunyikan Analisis';
+            } else {
+                analysis.style.display = 'none';
+                this.textContent = 'Tampilkan Analisis';
+            }
+        });
+    </script>
+</body>
+
+</html>

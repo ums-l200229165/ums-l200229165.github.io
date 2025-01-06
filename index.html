@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L200229165</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tambahkan CSS untuk styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+        }
+
+        .card a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <h3>Tugas Sebelum UTS</h3>
+                <a target="_blank" href="">Lihat Tugas</a>
+            </div>
+            <div class="card">
+                <h3>Tugas Sebelum UAS</h3>
+                <a target="_blank" href="https://ums-L200229165.github.io/laporan.html">Lihat Tugas</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Tambahkan JavaScript untuk interaktivitas
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card");
+
+            cards.forEach(card => {
+                card.addEventListener("click", () => {
+                    alert(`Anda mengklik: ${card.querySelector("h3").textContent}`);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
